@@ -1,0 +1,95 @@
+body{
+  margin: auto;
+}
+
+h1 {
+  color: #444444;
+  text-align: center;
+}
+
+h3 {
+  color: #fdbe35;
+  text-align: center;
+}
+  
+/* Contenedor elementos principales */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 3rem auto 0 auto;
+}
+
+/* Productos */
+#productos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 2px;
+  background-color: rgb(231, 231, 231);
+  box-shadow: 0px 0px 2px 3px rgb(231, 231, 231);
+  width: 90%;
+  margin: 2rem auto 3rem auto;
+  padding: 1rem 2rem;
+}
+
+.producto {
+  background-color: rgb(253, 253, 253);
+  box-shadow: 0px 0px 2px 3px rgb(214, 214, 214);
+  border-radius: 3%;
+  margin: .4rem 2rem;
+  width: 100px;
+  height: 100px;
+}
+
+.producto img {
+    width: 4rem;
+    height: 4rem;
+    pointer-events: none;
+    margin: 0.5rem .2rem 0rem .3rem;
+}
+
+.producto p{
+  padding: 0.1rem .2rem .4rem .3rem;
+}
+
+/* Cesta de la compra */
+#anadir-productos{
+  margin: 1.5rem 0 3rem 0;
+}
+
+#cesta {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius: 2px;
+	margin: 3rem auto 0 auto;
+	min-height: 100px;
+  max-width: 60%;
+	background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../img/cesta1.png");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+
+/* Papelera */
+#eliminar {
+    width: 20rem;
+    height: 3rem;
+    margin: auto;
+}
+
+.fa-trash-o{
+  color: rgb(235, 79, 79);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  #productos {
+    margin: 0 auto;
+    padding: .5rem 0rem;
+  }
+}

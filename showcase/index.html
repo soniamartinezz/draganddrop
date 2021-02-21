@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript -->
+    <script type="text/javascript" src="js/1.js"></script>
+
+    <title>Inicio - MercaOnline</title>
+</head>
+<body>
+    <!-- Cabecera -->
+    <head>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar navbar-light bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" href="index.html">MercaOnline</a>
+            </div>
+          </nav>
+    </head>
+    
+    <!-- Contenido principal -->
+    <main class="container">
+
+        <!-- Listado de productos -->
+        <h1>Listado de productos</h1>
+
+        <div id="productos" ondragover="return arrastrar(event)">
+
+            <div class="producto" id="arrastrable1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/agua.png" alt="agua">
+                <p>Agua</p>
+            </div>
+            <div class="producto" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/zumo.png" alt="zumo">
+                <p>Zumo</p>
+            </div>
+            <div class="producto" id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/leche.png" alt="leche">
+                <p>Leche</p>
+            </div>
+            <div class="producto" id="arrastrable4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/pasta.png" alt="pasta">
+                <p>Pasta</p>
+            </div>
+            <div class="producto" id="arrastrable5" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/pizza.png" alt="pizza">
+                <p>Pizza</p>
+            </div>
+            <div class="producto" id="arrastrable6" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/carne.png" alt="carne">
+                <p>Carne</p>
+            </div>
+            <div class="producto" id="arrastrable7" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/pescado.svg" alt="pescado">
+                <p>Pescado</p>
+            </div>
+            <div class="producto" id="arrastrable8" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/pan.png" alt="pan">
+                <p>Pan</p>
+            </div>
+            <div class="producto" id="arrastrable9" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/chocolate.png" alt="chocolate">
+                <p>Chocolate</p>
+            </div>
+            <div class="producto" id="arrastrable10" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+                <img src="img/helado.png" alt="helado">
+                <p>Helado</p>
+            </div>
+
+        </div>
+
+        <hr class="bg-danger">
+
+        <!-- Cesta de la compra -->
+        <div id="anadir-productos">
+            <h3>Cesta de la compra</h3>
+            
+            <div id="cesta" ondragover="return arrastrar(event)" ondrop="return copiar(event)">
+                
+            </div>
+        </div>
+        
+        <!-- Eliminar producto de la cesta de la compra -->
+        <div id="eliminar">
+            <i id="papelera" class="fa fa-trash-o fa-2x" ondragenter="return enter(event)" ondragover="return arrastrar(event)" ondrop="return eliminar(event)"></i>
+        </div>
+
+    </main>
+</body>
+</html>
